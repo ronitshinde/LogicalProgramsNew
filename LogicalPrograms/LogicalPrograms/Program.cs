@@ -6,7 +6,7 @@ namespace LogicalPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.Fibonanci Series\n2.Perfect Number\n3.Prime Number");
+            Console.WriteLine("1.Fibonanci Series \n2.Perfect Number");
             Console.WriteLine("Enter the option");
 
             int option = Convert.ToInt32(Console.ReadLine());
@@ -16,6 +16,11 @@ namespace LogicalPrograms
                 case 1:
                     FibonanciSeries series = new FibonanciSeries();
                     series.DisplayFibSeries();
+                    Console.ReadLine();
+                    break;
+                case 2:
+                    PerfectNumber number = new PerfectNumber();
+                    number.Perfect();
                     Console.ReadLine();
                     break;
             }
